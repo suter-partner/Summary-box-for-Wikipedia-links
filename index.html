@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wikipedia preview box</title>
+	<link rel="stylesheet" type="text/css" href="stylesweb.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Very simple Wikipedia preview-box for your website, web app or wordpress! Open source, works on mobile and desktop with mouse and on touch. Insert one line of code and it works.">
+	<link href="favicon.ico" rel="shortcut icon">
+	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+    <meta name="dcterms.rightsHolder" content="suter & partner, su-pa.net">
+    <meta name="dcterms.dateCopyrighted" content="12.2021">
+	<script>
+		function writeMailAdr() {
+			let a = "wikipedia.preview.box"; let b = a + "@su-pa.net";
+			document.write("<a href='mailto:" + b + "'>" + b + "</a>")
+		}
+	</script>
+</head>
+<body>
+	<div class="container top">
+		<h1 class="maintitle"><span>wikipedia</span><wbr><nobr>preview box</nobr></h1>
+		<h2 class="lead">What's it about</h2>
+		<p></p>
+		<p><strong>Turns any ordinary link to a Wikipedia article</strong> on your website <strong>into one with a preview box</strong> automatically.
+			<br>			
+			Works with touch or mouse, on mobile or laptop and is open source; see the examples below.<br>
+			<strong>It's done with just one line of code!</strong> Project on <a href="#">GitHub</a> (github.com)
+		</p>
+	</div>	
+	<div class="container">
+		<!--#region Try it out-->
+		<h2 class="lead">Try it out</h2>
+		<span class="tinyNote">Click or touch the Wikipedia Links (W) and see was happens.</span>
+		<p style="margin-top:5px;">
+			Lorem ipsum dolor sit amet <a href="https://en.wikipedia.org/wiki/Wind#Measurement">Wind</a> consetetur,
+			<a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Hitzewelle">Hitzewelle</a> aliquyam
+			erat, sed diam voluptua.
+			At vero eos et <a href="https://zh.wikipedia.org/wiki/%E5%85%A8%E7%90%83%E5%8F%98%E6%9A%96">全球变暖</a> accusam
+			et justo duo dolores et ea rebum. Gubergren, <a 
+			href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9_%D8%A7%D9%84%D8%B4%D9%85%D8%B3%D9%8A%D8%A9">المجموعة
+				الشمسية</a>.
+			Lorem ipsum dolor sit amet, <a href="https://de.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> consetetur
+			sadipscing elitr,
+			<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%B0%D0%B3%D0%BE%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D1%81%D0%BA">Благовещенск</a>
+			sed diam.
+		</p>
+		<!--#endregion-->
+
+		<!--#region How to, features-->
+		<details>
+			<summary>
+				<h2>How to</h2>
+			</summary>
+			<p>Paste the following line of code at the bottom of your website, <mark>&nbsp;that's all.&nbsp;</mark>
+				<span class="tinyNote">
+					Or do it yourself: Grab the code from <a href="#" onclick="return false">GitHub</a> and use it on your
+					website.<br>
+					Wordpress: In the admin go to "Appearance" / "Theme Editor" / "Theme Footer (footer.php)"
+					& paste the code before the <code>&lt;/body&gt;</code> tag.</span>
+			</p>
+			<p class="blueBox">
+				<code>&#x3C;script src=&#x22;https://su-pa.net/wikiPrevBox/wikiPreviewBox.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</code>
+			</p>
+			<p><strong>Customizations:</strong> There are some possibilities, see our <a href="#">docs on GitHub</a>.</p>
+			<h3>Features & characteristics</h3>
+			<p>
+				<span class="tinyNote">E.g. show only the summery text, customize the width,
+					prevent displaying a specific preview box
+					(e.g. <a href="https://en.wikipedia.org/wiki/Heatwave#nopreview" target="_blank" rel="noopener">Heatwave</a>),
+					easy settings, more ...</span><br>
+				<strong>See the whole <a href="#">list on GitHub</a>.</strong><br>
+			</p>
+		</details>
+		<!--#endregion-->
+
+		<!--#region About this project-->
+		<details>
+			<summary>
+				<h2>About this project</h2>
+			</summary>
+			<p>
+				We did this for using it on our
+				own websites, e.g. <a href="https://dontwastemy.energy" target="_blank" rel="noopener">dontwastemy.energy</a> (students collaboration projects). 
+				A tiny JavaScript file with 109 lines of code does the main job, plus a style sheet, a Wikipedia logo, a font and a bullet-gif.   
+				It uses the	<a href="https://en.wikipedia.org/wiki/XMLHttpRequest#Fetch_alternative">fetch API</a>
+				 to get the data for the preview boxes from the <a href="https://meta.wikimedia.org/wiki/Wikimedia_servers" target="_blank" 
+				 rel="noopener">Wikimedia servers</a> (wikimedia.org). All happens local in your browser, no other server is involved. 
+				You are invited to use it as well, it's under the <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>. 
+				<!-- There will never (say never:) be breaking changes ... -->
+				If you are interested to get a message on changes send us a message 
+				<script>writeMailAdr();</script>
+			</p>
+		</details>
+		<!--#endregion-->
+
+		<!--#region Privacy-->
+		<details>
+			<summary>
+				<h2>Privacy</h2>
+			</summary>		
+			<ul>
+				<li>Every call to a preview box contacts Wikipedia's servers, so you should trust Wikpedia.
+					Your trust concerns all your visitors. <a href="https://foundation.wikimedia.org/wiki/Privacy_policy#use"
+						target="_blank" rel="noopener">
+						Wikimedia Foundation privacy policy</a> (wikimedia.org)</li>
+				<li>With the variant <i>"Copy, paste & go!"</i> (see above), the required files are loaded once from our
+					server when the preview box is called up for the first time.</li>
+				<li>When you implement the <i>"Copy, paste & go!"</i> variant you could always check the functioning/code
+					through the examples above
+					on this page or on having a look on a website where it is in use (e.g. <a href="https://dontwastemy.energy"
+						target="_blank" rel="noopener">dontwastemy.energy</a>) because
+					that's the code all get delivered.</li>
+				<li>If you host the code yourself, it's up to you.</li>
+			</ul>
+		</details>
+		<!--#endregion-->
+
+		<!--#region How to support?-->
+		<details id="support">
+			<summary>
+				<h2>How to support?</h2>
+			</summary>		
+			<ul>
+				<li><strong>Become a meber of our association <a href="https://the-horse.education/" target="_blank" 
+							rel="noopener">«THE ! association»</a></strong>
+					(the-horse.education)<br>
+					We facilitate <strong>collaborative environmental projects</strong> by students & teachers with <strong>«The Horse»
+					concept</strong>! We are trying to spread it worldwide, so we can use good heads & hearts!
+					No due is
+					required <a href="https://the-horse.education/#joinin" target="_blank" rel="noopener">to become a member</a>
+					(the-horse.education).
+					We are a <strong>non-profit</strong> organization.
+				</li>
+				<li><strong><a href="https://donate.wikimedia.org/" target="_blank" rel="noopener">Make a donation</a> to the
+						<a href="https://en.wikipedia.org/wiki/Wikimedia_Foundation" target="_blank" rel="noopener">Wikimedia
+							Foundation</a></strong>
+				</li>
+				<li>Send us your feedback, suggestions, ideas for additional features or even bugs that cross your path.</li>
+				<li>Be happy & enjoy your life.</li>
+			</ul>
+		</details>
+		<!--#endregion-->
+		
+		<br>
+		<p>Made by <a href="https://su-pa.net" target="_blank" rel="noopener">su-pa.net</a> 11/2021<br>
+			This is a first version. Be nice & wise.<br>
+			Nick,
+			<script>writeMailAdr();</script>
+		</p>		
+
+		<!--#region Privacy website-->
+		<details class="privacy">
+			<summary class="summarySmall"><h3>Privacy of this website</h3></summary>			
+			<p>
+				With the exception of the Wikipedia preview-box service presented here this website <strong>does not use</strong>
+				cookies and <strong>does not use</strong> any third party services such as Google Analytics, Google Fonts, CDN services, FB,
+				Twitter, etc. When accessing the website, the web server logs the access data in log files (IP number, date, time, browser
+				and other technical information). This usage data could be used for statistical evaluations.
+				<br><br>
+				Based on Article 13 of the Swiss Federal Constitution and the data protection provisions of the federal	government,
+				<a href="https://www.admin.ch/opc/en/classified-compilation/19920153/201401010000/235.1.pdf" target="_blank">Federal Data Protection Act</a>
+				, DSG (admin.ch), every person is entitled to protection of their privacy and protection
+				against misuse of their personal data. We comply with these provisions. Personal data, such as that arising
+				from e-mail correspondence, is treated as strictly confidential.
+				<br><br>
+				Zurich, Switzerland, November 22, 2021
+			</p>
+		</details>
+		<!--#endregion-->
+	
+	</div>
+	<script>
+		//from gitHub, jump to "How to support?"
+		if (window.location.search.includes("the-horse")) {
+			document.getElementById("support").open = true;
+			window.scrollTo(0,document.body.scrollHeight);
+		}
+	</script>
+
+<!-- *** WIKIPEDIA PREVIEW BOX *** -->	
+<!-- your custom version -->
+<script src="/wikiPrevBox/wikiPreviewBox.min.js"></script>
+
+<!-- current project version: -->
+<!-- <script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox.min.js"></script> -->
+
+</body>
+</html>
