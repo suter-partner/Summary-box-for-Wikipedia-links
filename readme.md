@@ -58,7 +58,7 @@ data-wikipreview="width=*value*"
 <script data-wikipreview="noimages,width=250" src="..."></script>
 ```
 - `noimages`  
-If this value is set, only the summary texts and no images are shown; this can help to reduce traffic in places with poor network conditions; or show only the images you like (by using`#showimage`,seebelow).
+If this value is set, only the summary texts and no images are shown; this can help to reduce traffic in places with poor network conditions; or show only the images you like (by using`#showimage` - see below).
 - `width=...`  
  Width of the preview boxes, number of pixels, value between 200 and 400, default is 300.  
  <br>
