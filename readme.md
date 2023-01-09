@@ -35,7 +35,7 @@ After the following step(s), all links to a Wikipedia article on your website wi
 
 ### 1) Copy, paste & go!
 
-``Add the following line of code to the bottom of your web page, that's all - nothing else is needed.``
+``Add the following line of code to the bottom of your web page (right before the </body> tag), that's all - nothing else is needed.``
 ```
 <script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox.min.js"></script>
 ```
