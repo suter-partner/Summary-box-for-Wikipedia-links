@@ -1,7 +1,12 @@
  /*!
- * WIKIPEDIA PREVIEW BOXES
- * su-pa.net (c) version 12/10/2021, 1.0.0, nick, MIT-License
- * https://su-pa.net/wikiPrevBox/ :: project page
+ * SUMMARY BOX FOR WIKIPEDIA LINKS :: former WIKIPEDIA PREVIEW BOXES
+ * 10 December 2021 :: Version 1.0.0, MIT-License
+ * 10 November 2023 :: Version 1.1.1, GPL3-License (license changed; same as the WP plugin)
+ * Code refactoring, more custom params, new also as a WordPress Plugin v1.0.0 available
+ * 
+ * Project page: https://su-pa.net/wikiPrevBox/
+ * Dominik Fehr, wikinick@su-pa.net
+ * su-pa.net
  */
 @font-face {
     font-family: 'Wiki_SegoeWP-Semilight';
@@ -19,8 +24,8 @@ a.wikiLink, a.wikiLink::after {
     cursor: pointer;
 }
 a.wikiLink {
-    white-space: nowrap;
-    text-decoration: none;
+    white-space: nowrap !important;
+    text-decoration: none !important;
     margin-right: 0.6em;
 }
 a.wikiLink_rtl { /*right-to-left content*/
@@ -52,7 +57,7 @@ a.wikiLink::after {
     cursor: pointer;
     opacity: 0;
     transition: all 0.4s;
-    z-index: 9999;
+    z-index: 1; /*box must be on top of all, the highest zindex is calculated in js*/
     color: #262421;
     overscroll-behavior: none;
 }
@@ -102,6 +107,8 @@ a.wikiLink::after {
     /* width: 100%; */
     display: block;
 }
+.wikiArrow_ltr{display: inline-block;transform: rotate(-45deg);font-weight: 100;}
+.wikiArrow_rtl{display: inline-block;transform: rotate(225deg);font-weight: 100;}
 [class^="wikiBoxfooter_"] a{
     text-decoration: none;
     font-weight: bold;

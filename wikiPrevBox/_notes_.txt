@@ -1,18 +1,21 @@
 /*!
-* WIKIPEDIA PREVIEW BOXES
-* su-pa.net (c) version 12/09/2021, 1.0.0, MIT-License
+* «Summary box for Wikipedia links»
+* v 1.1.1, 10.11.2023, GPL v3 License
+* v 1.0.0, 09.12.2021, MIT-License, formerly «Wikipedia Preview boxes»
 * https://su-pa.net/wikiPrevBox/ :: project page
 */
  
-/*** self hosting - how to ***/
-1. Copy this folder (wikiPrevBox) to the root of your website
-2. Insert <script src="/wikiPrevBox/wikiPreviewBox.min.js"></script> before the </body> tag on the pages you would like to have the feature
+/*** self hosting - quick how to ***/
+1. Copy this folder "wikiPrevBox" to the root of your website
+2. Insert <script src="/wikiPrevBox/wikiPreviewBox.min.js" defer></script> before the </body> tag or inside the <head> tag. 
  
-=> read the readme.md too, see available settings
+=> read the readme.md for available settings
 => note the comments in the source files
 
-Send an email if you have any comments, ideas, etc.
+Project page: https://su-pa.net/wikiPrevBox/
+GitHub: https://github.com/su-pa/Summary-box-for-Wikipedia-links
+WordPress Plugin: https://supa.cyon.site/
 
-Nick, 
-wikipedia.preview.box@su-pa.net
-https://su-pa.net/wikiPrevBox/
+Send an email if you have any comments.
+Dominik C. Fehr, wikinick@su-pa.net
+su-pa.net
