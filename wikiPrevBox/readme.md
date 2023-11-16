@@ -3,9 +3,11 @@ Version 1.1.1, November 11, 2023, df
 
 ## Introduction
 The **«Summary box for Wikipedia links»** automatically turns any new and existing link to a Wikipedia article on your website into a link with a nice preview box containing the article summary!  
-**Project page:** [«Summary box for Wikipedia links»](https://su-pa.net/wikiPrevBox/)   
 
-**Some time ago**, MediaWiki came up with the wonderful idea of [Page Preview](https://www.mediawiki.org/wiki/Page_Previews), which shows a preview of a linked page on mouseover within the Wikipedia site. **We thought how nice it would be to have this feature for any website/web application that works in any browser and on any device, here it is!** Just add a line of code to add the feature to your website, it works on desktop & mobile.
+**Project page:** [Summary box for Wikipedia links](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
+
+**Some time ago**, MediaWiki came up with the wonderful idea of [Page Preview](https://www.mediawiki.org/wiki/Page_Previews), which shows a preview of a linked page on mouseover within the Wikipedia site. **We thought how nice it would be to have this feature for any website/web application that works in any browser and on any device!**  
+Just add a line of code to add the feature to your website, it works on desktop & mobile.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -37,15 +39,11 @@ The **«Summary box for Wikipedia links»** automatically turns any new and exis
 If you already using "Copy, paste & go!" (see below), you don't need to do anything. And if you like, you can start using the new parameters!
 
 ## About this repository
-This repository contains all necessary files for self-hosting . 
-
-the [project website](https://su-pa.net/wikiPrevBox/) including 
-
-After downloading and extracting the ZIP file, you will have a working example of the «Summary box for Wikipedia links» out of the box, no web server or installation required, just open the ``index.html`` file in your browser.
+This repository contains the necessary files for a self-hosting of the Summary Box. To use it in a more simpler way or as with our new WordPress plugin see below or go to the [project website](https://su-pa.net/wikiPrevBox/) (su-pa.net).  
 
 ## Examples
 1. [Check it out on the project page](https://su-pa.net/wikiPrevBox/)!  
-2. Some websites that use the «Summary box for Wikipedia links»:  
+2. Some of our websites that use the «Summary box for Wikipedia links»:  
 [dontwastemy.energy](https://dontwastemy.energy/2023/05/23/video-games-and-the-environment-how-are-they-related), [lanyu.land](https://lanyu.land/european-tourists-perspective), [the-horse.education](https://the-horse.education/), [teachingweb.org](https://teachingweb.org/en/), [risikosicherheit.ch](https://risikosicherheit.ch/psychische-resilienz/)  
 
 If you would like to have a link to your website/web application that uses the «Summary box for Wikipedia links», please let us know.
@@ -184,6 +182,7 @@ License: [GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 Please don't hesitate to reach out if you need assistance or have suggestions.\
 Dominik Fehr, wikinick@su-pa.net 
 
-[«Summary box for Wikipedia links» project page](https://su-pa.net/wikiPrevBox/)  
-[«Summary box for Wikipedia links» WordPress plugin](https://supa.cyon.site/)   
-df, [su-pa.net](https://su-pa.net) &copy; 11/2023
+[Project page](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
+[WordPress Plugin page](https://supa.cyon.site/) (supa.cyon.site)  
+
+[su-pa.net](https://su-pa.net), 11/2023
