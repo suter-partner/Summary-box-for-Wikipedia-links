@@ -64,7 +64,7 @@ If you would like to have a link to your website/web application that uses the �
 - Easy-to-use settings via parameters as part of the ``<script>`` tag (affects all preview boxes) or as part of the link url (affects a specific preview boxes)
 - Some custom parameters: width of the preview box; number of characters in the summary text; font size; don't show (an) image(s) 
 - Advanced: Customize all parts in the CSS
-- License: From version 1.1.1. GPL v3 applies (formerly MIT), Open Source
+- License: Version 1.1.1. GPLv3, Open Source
 
 # How to
 **Here are three different ways to use the «Summary box for Wikipedia links».**
@@ -83,13 +83,15 @@ You can skip ``defer`` if you place the code snippet at the bottom of your page.
 **Alternatively**, you can add the following line of code with an integrity key (SHA-384). This will ensure that the file has never been tempered either on our server or in transit. However, after an update, you will still get the older version until you update the script tag to the latest version.
 
 ```html
-<script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox_111a.min.js" integrity="sha384-0TKu3VREUd2XU++gzMzf8pXa4AMv7+kIl4RXIQTVxGtht9SP4DLebjEQImHZJOdQ" crossorigin="anonymous" defer></script>
+<script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox_111a.min.js"  
+integrity="sha384-0TKu3VREUd2XU++gzMzf8pXa4AMv7+kIl4RXIQTVxGtht9SP4DLebjEQImHZJOdQ"  
+crossorigin="anonymous" defer></script>
 ```
 
 Note: This is the latest version, older versions are always kept.
 
 ## 2) Grab the code and host it yourself
-Download this repository, **copy the folder "wikiPrevBox" to the root of your website** and add the following line of code at the very bottom of your website, just before the </body> tag or inside the <head> tag.  
+Download this repository, copy the folder "wikiPrevBox" to the root of your website and add the following line of code at the very bottom of your website, just before the ``</body>`` tag or inside the ``<head>`` tag.  
 
 ```html
 <script src="/wikiPrevBox/wikiPreviewBox.min.js" defer></script>
