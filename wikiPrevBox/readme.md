@@ -1,4 +1,5 @@
 # Summary box for Wikipedia links
+Version 1.1.1, November 11, 2023, df
 
 ## Introduction
 The **«Summary box for Wikipedia links»** automatically turns any new and existing link to a Wikipedia article on your website into a link with a nice preview box containing the article summary!  
@@ -36,7 +37,11 @@ The **«Summary box for Wikipedia links»** automatically turns any new and exis
 If you already using "Copy, paste & go!" (see below), you don't need to do anything. And if you like, you can start using the new parameters!
 
 ## About this repository
-This repository contains the [project website](https://su-pa.net/wikiPrevBox/) including all necessary files for self-hosting. After downloading and extracting the ZIP file, you will have a working example of the «Summary box for Wikipedia links» out of the box, no web server or installation required, just open the ``index.html`` file in your browser.
+This repository contains all necessary files for self-hosting . 
+
+the [project website](https://su-pa.net/wikiPrevBox/) including 
+
+After downloading and extracting the ZIP file, you will have a working example of the «Summary box for Wikipedia links» out of the box, no web server or installation required, just open the ``index.html`` file in your browser.
 
 ## Examples
 1. [Check it out on the project page](https://su-pa.net/wikiPrevBox/)!  
@@ -48,10 +53,9 @@ If you would like to have a link to your website/web application that uses the �
 ## Features & Characteristics
 - Lightweight; only 4KB of JavaScript, some CSS, a single character 'Wikipedia-W' font, a font and a bullet gif
 - Easy to use on **any website** and also available as a **[WordPress plugin](https://supa.cyon.site/)**
+- Works on mobile & desktop, with touch & mouse
 - Works in all (modern) browsers; if the feature does not work in a specific browser version or device, it remains a normal link (without the summary box)!
-- No installation required: Add a line of code to your site and the feature is yours
-- It's like magic, just add a line of code and on all the Wikipedia links on your website/web app a preview box pops up and the links are marked with a nice "Wiki-W"!
-- Works with touch & mouse, on mobile & desktop
+- It's like magic, just add a line of code to your site and on all the Wikipedia links on your website/web application a preview box pops up on mouse over or finger tab and the links are marked with a nice "Wiki-W"!
 - The Preview box automatically finds the best place to display on mobile & desktop, landscape & portrait mode
 - Wikipedia links with a summary box are nicely marked by a small Wikipedia logo that is made of a 1-char-font, the "Wiki-W"
 - Works with all languages, different text directions (ltr & rtl) and even mixed content/preview boxes
@@ -70,32 +74,44 @@ By following the steps below, all links to Wikipedia articles on your site will 
 
 ## 1) Copy, paste & go!
 
-Add the following line of code to the bottom of your page, just before the ``</body>`` tag or inside the ``<head>`` tag, and you're done!
+**Add the following line of code** to the bottom of your page, just before the ``</body>`` tag or inside the ``<head>`` tag, and you're done!
 
-	<script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox.min.js" crossorigin="anonymous" defer></script>
+```html
+<script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox.min.js" crossorigin="anonymous" defer></script>
+  ```
 
 You can skip ``defer`` if you place the code snippet at the bottom of your page.
 
-## 2) Grab the code and host it yourself
-Download this repository (it's a copy of the [project website](https://su-pa.net/wikiPrevBox)), copy the folder "wikiPrevBox" to the root of your website and add the following line of code at the very bottom of your website, just before the </body> tag or inside the <head> tag.  
+**Alternatively**, you can add the following line of code with an integrity key (SHA-384). This will ensure that the file has never been tempered either on our server or in transit. However, after an update, you will still get the older version until you update the script tag to the latest version.
 
+```html
+<script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox_111a.min.js" integrity="sha384-0TKu3VREUd2XU++gzMzf8pXa4AMv7+kIl4RXIQTVxGtht9SP4DLebjEQImHZJOdQ" crossorigin="anonymous" defer></script>
 ```
+
+Note: This is the latest version, older versions are always kept.
+
+## 2) Grab the code and host it yourself
+Download this repository, **copy the folder "wikiPrevBox" to the root of your website** and add the following line of code at the very bottom of your website, just before the </body> tag or inside the <head> tag.  
+
+```html
 <script src="/wikiPrevBox/wikiPreviewBox.min.js" defer></script>
 ```
-You can skip ``defer`` if you place the code snippet at the bottom of your page. Please refer the comments in the source files if you are interested in how it works or if you want to customize the code.   
+You can skip ``defer`` if you place the code snippet at the bottom of your page. Please refer the comments in the source files if you are interested in how it works or if you want to customize the code. See also the [project website](https://su-pa.net/wikiPrevBox).   
 
 ## 3) Use the WordPress plugin
-If you have a website running WordPress, you can easily install our [WordPress plugin](https://supa.cyon.site/). 
+If you have a website running WordPress, you can easily install the [WordPress plugin](https://supa.cyon.site/). 
 
 # Settings 
 ## Parameters that affect all Summary Boxes 
 The parameters are part of the ```<script ...>```-tag; currently you can set six parameters as part of the ```data-wikipreview``` attribute. All parameters are optional.
 
->data-wikipreview="noimages,width=*value*, ..."\
->... numberofchars, fontsize=*value*, openlinkinsamewindow, nowikilinknote
+```javascript
+data-wikipreview="noimages,width=..., ..."
+... numberofchars, fontsize=..., openlinkinsamewindow, nowikilinknote
+```
 
 ### Example
-```
+```html
 <script data-wikipreview="noimages,width=250,nowikilinknote,fontsize=1.1" src="..."></script>
 ```
 
@@ -115,12 +131,14 @@ If this value is set, the info url "(wikipedia.org)" next to the Wikipedia link 
    
 ## Parameters which affect a specific Summary Box 
 Add the parameter to the Wikipedia link URL; you can currently set three parameters:
->#nopreview\
-#showimage\
+```javascript
+#nopreview
+#showimage
 #dontshowimage
+```
 
 ### Example
-```
+```html
 <a href="https://en.wikipedia.org/wiki/Lanyu#nopreview">Orchid Island</a>
 ```
 - `#nopreview`  
@@ -133,9 +151,10 @@ Do not show the image of a specific Wikipedia link.
 
 ### Customize via Stylesheet
 Additionally, you can overwrite the CSS rules of the Summary Boxes in the stylesheet "wikiPreviewBox.css" (resp. "wikiPreviewBox.min.css" &ndash; be aware that the minified files (.min) are referenced), e.g.:  
-`a.wikiLink::after {color: #212427 !important;}` /* *color of the 'Wiki-W', default is 'inherit'* \*/\
-`a.wikiLink {color: darkgreen;}` /* *color of the Wikipedia link* \*/
-
+```css
+a.wikiLink::after {color: #212427 !important;}` /*color of the 'Wiki-W', default is 'inherit'*/
+a.wikiLink {color: darkgreen;} /*color of the Wikipedia link*/
+```
 Use `!important` if  necessary.
 
 ## Future plans & some ideas
