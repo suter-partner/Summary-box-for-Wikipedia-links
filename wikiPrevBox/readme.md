@@ -2,7 +2,7 @@
 Version 1.1.1, November 11, 2023, df
 
 ## Introduction
-The **«Summary box for Wikipedia links»** automatically turns any **existing & new** links to a Wikipedia article on your website into a link with a nice preview box containing the article summary. It works on desktop & mobile!  
+The «Summary box for Wikipedia links» **instantly** turns **all existing & new** links to a Wikipedia article on your site into links **with nice preview boxes** containing the article summary!
 
 To get the feature, you can simply add a line of code to your website/web application or copy the code here and host it yourself. 
 
@@ -48,7 +48,7 @@ This repository contains the necessary files for a self-hosting of the «Summary
 
 ## Features & Characteristics
 - Lightweight; only 4KB of JavaScript, some CSS, a single character 'Wikipedia-W' font, a font and a bullet gif
-- Easy to use on **any website** and also available as a **[WordPress plugin](https://supa.cyon.site/)**
+- Easy to use on **any website** and also available as a **[WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin)**
 - Works on mobile & desktop, with touch & mouse
 - Works in all (modern) browsers; if the feature does not work in a specific browser version or device, it remains a normal link (without the summary box)!
 - It's like magic, just add a line of code to your site and on all the Wikipedia links on your website/web application a preview box pops up on mouse over or finger tab and the links are marked with a nice "Wiki-W"!
