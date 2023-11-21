@@ -2,12 +2,12 @@
 Version 1.1.1, November 11, 2023, df
 
 ## Introduction
-The **«Summary box for Wikipedia links»** automatically turns any new and existing link to a Wikipedia article on your website into a link with a nice preview box containing the article summary!  
+The **«Summary box for Wikipedia links»** automatically turns any **existing & new** links to a Wikipedia article on your website into a link with a nice preview box containing the article summary. It works on desktop & mobile!  
 
-**Project page:** [Summary box for Wikipedia links](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
+To get the feature, you can simply add a line of code to your website/web application or copy the code here and host it yourself. 
 
-**Some time ago**, MediaWiki came up with the wonderful idea of [Page Preview](https://www.mediawiki.org/wiki/Page_Previews), which shows a preview of a linked page on mouseover within the Wikipedia site. **We thought how nice it would be to have this feature for any website/web application that works in any browser and on any device!**  
-Just add a line of code to add the feature to your website, it works on desktop & mobile.
+**Try** the feature on the [project page](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
+**Also** available as a [WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin/) (github.com)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -32,21 +32,19 @@ Just add a line of code to add the feature to your website, it works on desktop 
 - **Version 1.1.1** (November 08, 2023)
   - Introduced new customizable parameters (``numberofchars=..., openlinkinsamewindow, nowikilinknote, #dontshowimage``)
   - Improved code refactoring
-  - **New:** Also available as [WordPress plugin](https://supa.cyon.site/)!
+  - **New:** Also available as [WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin)!
 - **Version 1.0.0** (December 10, 2021)
   - Initial release as "Wikipedia preview box"
 
-If you already using "Copy, paste & go!" (see below), you don't need to do anything. And if you like, you can start using the new parameters!
+If you already use "Copy, paste & go!" (see below), you don't need to do anything. And if you like, you can start using the new parameters!
 
 ## About this repository
-This repository contains the necessary files for a self-hosting of the Summary Box. To use it in a more simpler way or as with our new WordPress plugin see below or go to the [project website](https://su-pa.net/wikiPrevBox/) (su-pa.net).  
+This repository contains the necessary files for a self-hosting of the «Summary box for Wikipedia links» feature. 
 
 ## Examples
 1. [Check it out on the project page](https://su-pa.net/wikiPrevBox/)!  
 2. Some of our websites that use the «Summary box for Wikipedia links»:  
 [dontwastemy.energy](https://dontwastemy.energy/2023/05/23/video-games-and-the-environment-how-are-they-related), [lanyu.land](https://lanyu.land/european-tourists-perspective), [the-horse.education](https://the-horse.education/), [teachingweb.org](https://teachingweb.org/en/), [risikosicherheit.ch](https://risikosicherheit.ch/psychische-resilienz/)  
-
-If you would like to have a link to your website/web application that uses the «Summary box for Wikipedia links», please let us know.
 
 ## Features & Characteristics
 - Lightweight; only 4KB of JavaScript, some CSS, a single character 'Wikipedia-W' font, a font and a bullet gif
@@ -88,7 +86,7 @@ integrity="sha384-0TKu3VREUd2XU++gzMzf8pXa4AMv7+kIl4RXIQTVxGtht9SP4DLebjEQImHZJO
 crossorigin="anonymous" defer></script>
 ```
 
-Note: This is the latest version, older versions are always kept.
+Note: This is the latest version, older versions are always kept but not listed here.
 
 ## 2) Grab the code and host it yourself
 Download this repository, copy the folder "wikiPrevBox" to the root of your website and add the following line of code at the very bottom of your website, just before the ``</body>`` tag or inside the ``<head>`` tag.  
@@ -183,8 +181,8 @@ License: [GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html)
 **Nothing is perfect!** I'm not nothing.\
 Please don't hesitate to reach out if you need assistance or have suggestions.\
 Dominik Fehr, wikinick@su-pa.net 
-
+ 
 [Project page](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
-[WordPress Plugin page](https://supa.cyon.site/) (supa.cyon.site)  
+[WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin/) (github.com)
 
-[su-pa.net](https://su-pa.net), 11/2023
+[su-pa.net](https://su-pa.net), last updated, November 21, 2023
