@@ -17,7 +17,7 @@
     
     //path to the CSS file
     //let CSS_PATH = "https://su-pa.net/wikiPrevBox/wikiPreviewBox.min.css"; //copy, past & go! 
-    let CSS_PATH   = "wikiPrevBox/wikiPreviewBox.min.css";                  //self hosting
+    let CSS_PATH   = "/wikiPrevBox/wikiPreviewBox.min.css";                  //self hosting
     document.getElementsByTagName('head')[0].insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="' + CSS_PATH + '">'); //self hosting 
     
     //show summary box always on very top
@@ -124,7 +124,7 @@
 
     //#region sanitize API data from Wikipedia
     function sanitizeApiData(str) { //sanitizeHTML
-        const allowedTags = ['b', 'i', 'p', 'strong', 'ul', 'li', 'img', 'span', 'a']; //allowed tags           
+        const allowedTags = ['b', 'i', 'p', 'strong', 'ul', 'li', 'img', 'span', 'a', 'sup', 'sub', 'div', 'ol']; //allowed tags        
         return str.replace(/<\/?([a-zA-Z0-9]+)(\s+[^>]*)?>/g, (match, tagName) => { // replace not allowed tags with its escaped version
             tagName = tagName.toLowerCase();
             if (allowedTags.includes(tagName)) {return match;} // allowed tags

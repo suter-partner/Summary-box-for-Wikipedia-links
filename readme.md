@@ -1,5 +1,5 @@
 # Summary box for Wikipedia links
-Version 1.1.1, November 11, 2023, df
+Version 1.1.1, November 25, 2023, df
 
 ## Introduction
 The «Summary box for Wikipedia links» **instantly** turns **all existing & new** links to a Wikipedia article on your site into links **with nice preview boxes** containing the article summary!
@@ -29,6 +29,9 @@ To get the feature, you can simply add a line of code to your website/web applic
 - [Contact](#contact)
 
 ## Update history
+- **Version 1.1.1** (November 25, 2023, minor update)
+  - Corrected CCS path for self-hosting
+  - Added allowed tag (``<sup>``) in the summary box (Wiki API data)
 - **Version 1.1.1** (November 08, 2023)
   - Introduced new customizable parameters (``numberofchars=..., openlinkinsamewindow, nowikilinknote, #dontshowimage``)
   - Improved code refactoring
@@ -51,18 +54,15 @@ This repository contains the necessary files for a self-hosting of the «Summary
 - Easy to use on **any website** and also available as a **[WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin)**
 - Works on mobile & desktop, with touch & mouse
 - Works in all (modern) browsers; if the feature does not work in a specific browser version or device, it remains a normal link (without the summary box)!
-- It's like magic, just add a line of code to your site and on all the Wikipedia links on your website/web application a preview box pops up on mouse over or finger tab and the links are marked with a nice "Wiki-W"!
+- It's like magic, just add a line of code to your site and on all the Wikipedia links on your website/web application a preview box pops up on mouse over or finger tab
 - The Preview box automatically finds the best place to display on mobile & desktop, landscape & portrait mode
 - Wikipedia links with a summary box are nicely marked by a small Wikipedia logo that is made of a 1-char-font, the "Wiki-W"
-- Works with all languages, different text directions (ltr & rtl) and even mixed content/preview boxes
+- Works with all languages, different text directions (ltr & rtl) and even mixed content
 - Works with existing offsite link icons
 - Built-in "auto hyphenation" (CSS) for all (available) languages
 - Fine animation of the summary boxes 
-- Shows the summary text & the image (if any) of the linked Wikipedia article inside a preview box (by default)\
+- Shows the summary text & the image (if any) of the linked Wikipedia article inside a preview box (by default)
 - Easy-to-use settings via parameters as part of the ``<script>`` tag (affects all preview boxes) or as part of the link url (affects a specific preview boxes)
-- Some custom parameters: width of the preview box; number of characters in the summary text; font size; don't show (an) image(s) 
-- Advanced: Customize all parts in the CSS
-- License: Version 1.1.1. GPLv3, Open Source
 
 # How to
 **Here are three different ways to use the «Summary box for Wikipedia links».**
@@ -82,7 +82,7 @@ You can skip ``defer`` if you place the code snippet at the bottom of your page.
 
 ```html
 <script src="https://su-pa.net/wikiPrevBox/wikiPreviewBox_111a.min.js"  
-integrity="sha384-0TKu3VREUd2XU++gzMzf8pXa4AMv7+kIl4RXIQTVxGtht9SP4DLebjEQImHZJOdQ"  
+integrity="sha384-UPeEJIqACRF4Dgoxyw3ZooCA1DlSFrDQ/cjrGvlAy7Bjnl0boUU8MUTRZuRBRhe8"  
 crossorigin="anonymous" defer></script>
 ```
 
@@ -185,4 +185,4 @@ Dominik Fehr, wikinick@su-pa.net
 [Project page](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
 [WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin/) (github.com)
 
-[su-pa.net](https://su-pa.net), last updated, November 21, 2023
+[su-pa.net](https://su-pa.net), last updated, November 25, 2023

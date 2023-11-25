@@ -1,5 +1,6 @@
 /*!
 * «Summary box for Wikipedia links»
+* v 1.1.1, 25.11.2023, Corrected CCS path self-hosting, added allowed tag Wiki API data 
 * v 1.1.1, 10.11.2023, GPL v3 License
 * v 1.0.0, 09.12.2021, MIT-License, formerly «Wikipedia Preview boxes»
 * https://su-pa.net/wikiPrevBox/ :: project page
