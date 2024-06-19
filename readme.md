@@ -2,12 +2,15 @@
 Version 1.1.1, November 25, 2023, df
 
 ## Introduction
-The «Summary box for Wikipedia links» **instantly** turns **all existing & new** links to a Wikipedia article on your site into links **with nice preview boxes** containing the article summary!
+- Shows nice preview boxes with the summaries of linked Wikipedia articles.
+- Works out of the box, even with existing Wikipedia links on your website.
+- Works on all devices, mobile and desktop.
+- Also available as a WordPress plugin.
+- Check it out: Add one line of code to your website/webapp, that's it!
+- Alternatively you can copy the code to your server and host it yourself.
 
-To get the feature, you can simply add a line of code to your website/web application or copy the code here and host it yourself. 
-
-**Try** the feature on the [project page](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
-**Also** available as a [WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin/) (github.com)
+Project page(https://su-pa.net/wikiPrevBox/) (su-pa.net)  
+WordPress plugin(https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin/) (github.com)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -185,4 +188,4 @@ Dominik Fehr, wikinick@su-pa.net
 [Project page](https://su-pa.net/wikiPrevBox/) (su-pa.net)  
 [WordPress plugin](https://github.com/su-pa/Summary-box-for-Wikipedia-links_WordPress-Plugin/) (github.com)
 
-[su-pa.net](https://su-pa.net), last updated, November 25, 2023
+[su-pa.net](https://su-pa.net), last code update, November 25, 2023
